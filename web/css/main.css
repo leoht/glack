@@ -1,0 +1,107 @@
+html,body {
+    width:100%; height: 100%; margin: 0; padding: 0;
+}
+
+#root {
+    margin: 0; padding: 0;
+    background: #eee;
+    width: 100%; height: 100%;
+}
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #343434;
+    color: white;
+    /*padding: 0 20px;*/
+    width: 20%;
+    height: 100%;
+}
+
+.sidebar-wrapper {
+    padding: 25px;
+}
+
+#sidebar .channel-list {
+    margin: 30px 0;
+}
+
+#sidebar .channel-list ul {
+    padding: 0;
+    margin: 0;
+}
+
+#sidebar .channel-list li {
+    list-style-type: none;
+    padding: 0;
+    margin: 16px 0;
+    cursor: pointer;
+}
+
+.sidebar-section-title {
+    color: #aaa;
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #555;
+    font-style: italic;
+}
+
+.message-feed {
+    margin-left: 20%;
+    padding: 30px 20px;
+}
+
+.message-feed .message {
+    background: #fafafa;
+    padding: 14px 20px;
+    margin: 10px 0;
+    border-radius: 4px;
+}
+
+.message-feed .message .author {
+    font-size:13px;
+    border-bottom: 1px solid #ddd;
+}
+
+.message-feed .message .body {
+    margin-top:10px;
+}
+
+#message_box {
+    position: absolute;
+    bottom: 30px; left: 20%;
+    width: 80%;
+    height: 100px;
+}
+
+#message_box textarea {
+    width: 85%;
+    height: 100%;
+    padding: 15px;
+    border: none;
+    font-size: 18px;
+    resize: none;
+    outline: none;
+    box-shadow: inset 0px 2px 5px #ddd;
+}
+
+#message_box .send-btn {
+    float: right;
+    height: 100%;
+    width: 12%;
+    padding: 15px 0;
+    vertical-align: middle;
+    background: green;
+    cursor: pointer;
+    box-shadow: inset 0px 2px 5px #666;
+}
+
+#message_box .send-btn span {
+    display: block;
+    margin: 40px auto;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
